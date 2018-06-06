@@ -6,7 +6,7 @@ Project Name:		Universal Turing Machine
 					
 Details:
 
-This project is to simulate a Universal Turing Machine as dreamt and designed by Sir Allan Turing.
+This project is to simulate a Universal Turing Machine as dreamt and designed by Sir Alan Turing.
 A Universal Turing Machine takes input and produces output on an Input/Output Tape. This tape is ideally infinite.
 The machine takes two inputs:
 
