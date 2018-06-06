@@ -28,7 +28,7 @@ USER INSTRUCTIONS:
 
 2.	Compile both .cpp files easily usinf the auto_compile.sh script:
 		`$ ./auto_compile.sh`,
-	or, do it yourself like a pro using g++ or something. The files are code_creator.cpp and universal_turing_machine.cpp
+	or, do it yourself like a pro using g++ or something. The files are *code_creator.cpp* and *universal_turing_machine.cpp*
 
 3.	Create the code.dat file using:
 		`$ ./code_creator`,
