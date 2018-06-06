@@ -4,7 +4,7 @@ Project Date:		02 June 2018
 
 Project Name:		Universal Turing Machine
 			          
-                Version:	1.0
+	Version: 1.0
 					
 INTRODUCTION:
 ============
@@ -28,16 +28,19 @@ USER INSTRUCTIONS:
 
 2.	Compile both .cpp files easily usinf the auto_compile.sh script:
 		`$ ./auto_compile.sh`
-	Or, do it yourself like a pro using g++ or something. The files are code_creator.cpp and
-	universal_turing_machine.cpp
+	Or, do it yourself like a pro using g++ or something. The files are code_creator.cpp and universal_turing_machine.cpp
 
 3.	Create the code.dat file using:
 		`$ ./code_creator`
-	Or using the executable filename you used manually.
-	The Universal Turing Machine reads its State Transition Table from this file.
-	NOTE: If you do not know what a Turing Machine is, Google it or something.
+	Or using the executable filename you used manually. The Universal Turing Machine reads its State Transition Table from this file. NOTE: If you do not know what a Turing Machine is, Google it or something.
 
 4.	Run the Turing Machine using:
 		`$ ./utm`
 	Or using the executable filename you used manually.
 
+5.	You can run the Turing Machine in Verbose mode as well to get Error Messages and State Transitions:
+		`$ ./utm -v`
+
+6.	You can use the shell scripts *autorun.sh* and *autorun_verbose.sh* to run the program in non-verbose and verbose modes respectively. Remember, using these scripts will make you create the *code.dat* file each time.
+	
+7.	To not create the *code.dat* file every time, use the shell scripts *run_utm.sh* and *run_utm_verbose.sh* to run the program in non-verbose and verbose modes respectively. 
