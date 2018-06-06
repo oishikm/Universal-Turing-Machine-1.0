@@ -26,7 +26,7 @@ USER INSTRUCTIONS:
 		`$ chmod +x auto_compile.sh`.
 	This grants executable permission to compilation shell script.
 
-2.	Compile both .cpp files easily usinf the auto_compile.sh script:
+2.	Compile both .cpp files easily using the *auto_compile.sh* script:
 		`$ ./auto_compile.sh`,
 	or, do it yourself like a pro using g++ or something. The files are *code_creator.cpp* and *universal_turing_machine.cpp*
 
