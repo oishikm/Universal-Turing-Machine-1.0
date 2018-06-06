@@ -20,10 +20,10 @@ typedef class code_creator_def
 {
 	private:
 		ofstream fout;
-		char data_line[50];										// I/O buffer
+		char data_line[50];					// I/O buffer
 		
 	public:
-		code_creator_def()										// Constructor
+		code_creator_def()					// Constructor
 		{
 			strcpy(data_line,"");
 		}
@@ -36,19 +36,19 @@ typedef class code_creator_def
 			cin >> n;
 			init_output();
 			fout << n << "\n";
-			if(n>0)	input(n); 									// For naughty users with 0 or negative input
+			if(n>0)	input(n); 				// For naughty users with 0 or negative input
 		}
 		
 		void input(int n)
 		{
 			cout << "\nInput all transition functions of format \"d(q(i),E) = {q(j)DC}\" as \"i E j D C\"\n" 
-				 	  << "\nEnter " << n << " transition function(s) :\n";
+				<< "\nEnter " << n << " transition function(s) :\n";
 			int ix;
-			cin.ignore();										// For input of previous integer
+			cin.ignore();					// For input of previous integer
 			for (ix = 0; ix < n; ix++)
 			{
 				cout << "\nDelta " << ix + 1 << " : ";
-				cin.getline(data_line, 50);						// To accomodate spaces
+				cin.getline(data_line, 50);		// To accomodate spaces
 				output(data_line);
 			}
 			term_output();
@@ -57,7 +57,7 @@ typedef class code_creator_def
 		void init_output()
 		{
 			fout.open("code.dat",ios::out);
-			if (!fout)											// Null Pointer Exception
+			if (!fout)					// Null Pointer Exception
 			{
 				cout << "\nError : Could not generate output file.\nTerminating process.\n";
 				exit(0);
@@ -73,7 +73,7 @@ typedef class code_creator_def
 		{
 			fout.close();
 			cout << "\nGenerated file code.dat is : \n";
-			system("cat code.dat");								// Linux shell
+			system("cat code.dat");				// Linux shell
 			cout << "\nExiting.\n";
 		}
 		
