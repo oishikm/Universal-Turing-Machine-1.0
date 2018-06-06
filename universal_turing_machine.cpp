@@ -23,10 +23,10 @@ using namespace std;
 
 typedef struct transition_table_entry_def
 {
-	int i, j;												// States of q(i) -> q(j)
-	char E, D, C;											// Input Symbol, Direction and Changed Symbol
+	int i, j;							// States of q(i) -> q(j)
+	char E, D, C;							// Input Symbol, Direction and Changed Symbol
 	
-	void set_var(char req_str[])							// Sets all variables
+	void set_var(char req_str[])					// Sets all variables
 	{
 		i = 0;
 		j = 0;
@@ -98,24 +98,24 @@ typedef struct transition_table_def
 typedef class universal_turing_machine_def
 {
 	private:
-		int 				state;							// Internal State Governor
-		char 				input_tape[100];				// I/O Tape
-		char				symbol;							// Current Input Symbol
-		int 				n;								// Number of transition functions
-		int 				rwhead;							// Location of R/W Head
-		int 				halt_state;						// Halting state (if any)
-		int					init_state;						// Initial state (default 0)
-		ifstream 			fin;
-		transition_table	T;								// Set of transition functions
+		int 			state;				// Internal State Governor
+		char 			input_tape[100];		// I/O Tape
+		char			symbol;				// Current Input Symbol
+		int 			n;				// Number of transition functions
+		int 			rwhead;				// Location of R/W Head
+		int 			halt_state;			// Halting state (if any)
+		int			init_state;			// Initial state (default 0)
+		ifstream 		fin;
+		transition_table	T;				// Set of transition functions
 		
-		int verbose;										// Flag : Linux option verbose mode '-v'
+		int verbose;						// Flag : Linux option verbose mode '-v'
 		
 	public:
-		universal_turing_machine_def()						// Constructor
+		universal_turing_machine_def()				// Constructor
 		{
 			state 			=	0;
-			input_tape[0] 	= 	'\0';
-			n 				= 	0;
+			input_tape[0] 		= 	'\0';
+			n 			= 	0;
 			rwhead 			=	0;
 			halt_state		=	-1;
 			init_state		=	0;
@@ -145,7 +145,7 @@ typedef class universal_turing_machine_def
 			char bufline[100];
 			register int ax;
 			fin >> n;
-			fin.ignore();									// Newline ignored
+			fin.ignore();					// Newline ignored
 			T.create_table(n);
 			for(ax = 0; ax < n && !fin.eof(); ax++)
 			{
@@ -251,7 +251,7 @@ typedef class universal_turing_machine_def
 			cout << "\nSTATE : q("<< state << ")\nI/O TAPE : " << input_tape << "\n";
 		}
 		
-		~universal_turing_machine_def()						// Destructor
+		~universal_turing_machine_def()				// Destructor
 		{
 			T.delete_table();
 		}
