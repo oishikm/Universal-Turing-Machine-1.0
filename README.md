@@ -2,7 +2,7 @@ Project Author:		Oishik Mukhopadhyay
 
 Project Date:		02 June 2018
 
-Project Name:		Universal Turing Machine
+	Project Name:		Universal Turing Machine
 			          
 	Version: 1.0
 					
