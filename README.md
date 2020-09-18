@@ -28,11 +28,11 @@ USER INSTRUCTIONS:
 
 2.	Compile both .cpp files easily using the *auto_compile.sh* script:
 		`$ ./auto_compile.sh`,
-	or, do it yourself like a pro using g++ or something. The files are *code_creator.cpp* and *universal_turing_machine.cpp*
+	or, compile them yourself using g++ or a similar C++ compiler. The files are *code_creator.cpp* and *universal_turing_machine.cpp*
 
 3.	Create the *code.dat* file using:
 		`$ ./code_creator`,
-	or using the executable filename you used manually. The Universal Turing Machine reads its State Transition Table from this file. NOTE: If you do not know what a Turing Machine is, Google it or something.
+	or using the executable filename you used manually. The Universal Turing Machine reads its State Transition Table from this file. NOTE: If you do not know clearly what a Universal Turing Machine is, [check this](https://en.wikipedia.org/wiki/Universal_Turing_machine).
 
 4.	Run the Turing Machine using:
 		`$ ./utm`,
