@@ -77,7 +77,7 @@ typedef class code_creator_def
 			cout << "\nExiting.\n";
 		}
 		
-		// Destructor defaulted, left to compiler.
+		// Destructor default, left to compiler.
 		
 } code_creator;
 
